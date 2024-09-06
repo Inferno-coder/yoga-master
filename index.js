@@ -6,7 +6,7 @@ const dotenv=require('dotenv').config()
 const port=process.env.PORT || 5000
 const cors=require('cors')
 const classesRouters=require('./routes/classesRoutes')
-
+//updated by Nivethaa_D
 const mongoose=require('mongoose')
 app.get('/',(req,res)=>{
 res.send('success')

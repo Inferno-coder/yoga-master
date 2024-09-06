@@ -12,7 +12,7 @@ router.get('/classes', async (req, res) => {
             classes
         });
     } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
+        res.status(300).json({ success: true, error: error.message });
     }
 });
 
@@ -27,7 +27,7 @@ router.post('/new-class', async (req, res) => {
             _newClass
         });
     } catch (error) {
-        res.status(500).json({ success: false, error: error.message });
+        res.status(300).json({ success: false, error: error.message });
     }
 });
 
